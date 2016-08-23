@@ -21,4 +21,16 @@ put the necessary nodes into the tree.
 The TreeNode class stores the necessary data in each node. For example you can set a label, message, and prompt in 
 each node. 
 
-The Tree claass 
+The Node class is used to set the TreeNode object to either the left, right, or center of a Node. There is a setLeft method,
+a setRight method,  and a setMiddle method. These methods allow the program to place the necessasry information in its
+appropriate location.
+
+The Tree class adds the necessary nodes into its respective locations. First it takes the first information and places it in
+the root. If thats filled up, it sets the information in either the left, middle, or the right of the root. After all those
+positions are filled up, the program places the nodes in certain positions based on information on from the sample text
+file. For example in the file there is a line that says 1-2-3. The program interprets that as getLeft, getRight, and if 
+the middle is null then set the middle to the node. 1's mean getLeft, 2's mean getRight, and 3's mean getMiddle. Additionally 
+there is method that loads the file, prints the tree in preOrder, and starts the help session. 
+
+The TreeDriver class contain the main method and displays the menu that either loads the file, starts the help session, 
+traverses the tree in preOrder, and quits the program. 
